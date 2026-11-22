@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="‘뭐로 긁지?’ iOS 앱의 기기 저장, Google 광고, 문의 정보와 이용자 선택을 안내합니다.">
+  <meta name="description" content="‘뭐로 긁지?’ iOS 앱의 기기 저장, 앱 사용 통계와 오류 보고서, Google 광고와 이용자 선택을 안내합니다.">
   <title>뭐로 긁지? 개인정보처리방침</title>
   <link rel="icon" href="/app-icon.png">
   <link rel="stylesheet" href="/styles.css">
@@ -24,6 +24,12 @@
       <h2>Hot 검색어</h2>
       <p>전체 인기 검색어를 보여 주기 위해 검색을 제출하면 검색 사전에서 인식한 브랜드 또는 업종의 식별자 한 개를 Supabase 집계 서버로 전송합니다. 입력한 문장, 카드 상품·카드번호·이용금액, 이름·이메일·계정·영구 기기 식별자는 집계 요청에 포함하지 않습니다. 입력 중의 글자는 전송하지 않습니다.</p>
       <p>서버는 브랜드·업종별 횟수를 시간 단위로 합산하고 최근 24개 시간 구간의 상위 검색어를 제공합니다. 중복·남용 방지를 위해 짧은 유효기간의 임시 토큰과 매일 바뀌는 방식으로 변환한 네트워크 주소의 HMAC 값을 사용합니다. 원문 네트워크 주소는 집계 테이블에 저장하지 않으며, 오래된 집계·제한 기록은 요청 시 정리합니다. 네트워크 접속·운영 로그 등 서비스 제공자의 처리는 <a href="https://supabase.com/privacy">Supabase 개인정보처리방침</a>을 따릅니다.</p>
+    </section>
+    <section>
+      <h2>앱 사용 통계와 오류 보고서</h2>
+      <p>앱 개선 정보 공유를 선택하면 앱을 연 시간대, 화면 사용 시간, Hot 검색어의 노출·첫 클릭 순위를 Firebase용 Google Analytics로 전송합니다. Hot 검색어 이벤트에는 표시 순위만 담습니다. Google은 분석에 필요한 앱 설치 단위의 식별자, 앱·운영체제 버전, 기기 유형과 대략적인 지역 등의 정보를 처리할 수 있습니다.</p>
+      <p>앱이 갑자기 종료되거나 검색과 데이터 갱신에 오류가 발생하면 Firebase Crashlytics로 오류 보고서를 보낼 수 있습니다. 보고서에는 코드에서 오류가 난 위치, 오류 유형, 기기·앱 정보와 오류 직전의 앱 사용 이벤트가 포함될 수 있습니다. 앱에서 추가로 기록하는 검색·데이터 갱신 오류에는 정해진 오류 코드와 유형만 담습니다.</p>
+      <p>이 정보는 사용 패턴을 파악하고 오류를 수정하는 데 사용합니다. <strong>내 설정 → 개인정보 및 광고 → 앱 개선 정보 공유</strong>에서 공유 여부를 언제든 바꿀 수 있습니다. 공유를 끄면 이후 앱 개선 정보 전송을 중단합니다. <a href="https://firebase.google.com/support/privacy?hl=ko">Firebase의 데이터 처리 안내</a></p>
     </section>
     <section>
       <h2>광고와 개인정보 선택</h2>
